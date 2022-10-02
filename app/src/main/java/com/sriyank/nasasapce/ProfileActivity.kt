@@ -38,5 +38,9 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        quiz.setOnClickListener {
+            startActivity(Intent(this,QuizActivity::class.java))
+        }
+
     }
 }

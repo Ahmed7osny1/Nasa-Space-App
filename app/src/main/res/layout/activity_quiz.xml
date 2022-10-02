@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".QuizActivity">
+
+
+    <TextView
+        android:id="@+id/Question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter your Question"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:progress="0"
+            android:max="25"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            />
+
+        <TextView
+            android:id="@+id/progress_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/3"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/que1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Optional"
+        android:background="@drawable/question_style"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/que2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Optional"
+        android:background="@drawable/question_style"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/que3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Optional"
+        android:background="@drawable/question_style"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        />
+
+</LinearLayout>
